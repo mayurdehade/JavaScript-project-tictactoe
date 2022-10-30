@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #4ca3f932;
+}
+nav {
+  background-color: #307ecc;
+  color: white;
+  height: 60px;
+  font-size: 31px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  width: 100vw;
+  text-align: center;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 73px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: sans-serif;
+  position: relative;
+  margin-right: 50px;
+}
+
+h1{
+  font-size: 35px;
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 10vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1vw;
+  /* color: #307ECC; */
+
+}
+
+.box:hover {
+  background-color: #0080ff67;
+}
+
+.gameInfo {
+  padding: 0 34px;
+}
+
+.imgbox img {
+  display: none;
+}
+
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+
+.info-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.info{
+  font-size: 25px;
+  margin-top: 15px;
+  padding: 10px 0;
+  font-family: sans-serif;
+  color: #307ECC;
+  /* border: 2px solid #307ECC; */
+  text-align: center;
+  font-weight: bold;
+}
+
+#reset{
+  width: 50%;
+  margin: 13px auto;
+  padding: 7px 29px;
+  background: #307ECC;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 23px;
+  /* font-weight: bolder; */
+  color: #ffffff;
+}
+.line{
+  background-color: black;
+  height: 10px;
+  width: 25.5vw;
+  position: absolute;
+  background-color: #307ECC;
+  border-radius: 10vw;
+}
+
+/* Responsive */
+@media screen  and (max-width: 415px) {
+  .gameContainer{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .gameInfo h1{
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .container{
+    grid-template-rows: repeat(3, 25vw);
+    grid-template-columns: repeat(3, 25vw);
+    margin: auto;
+  }
+  .box{
+    font-size: 20vw;
+  }
+}
